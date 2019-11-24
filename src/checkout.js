@@ -86,8 +86,11 @@ class CheckOut extends Component {
 
 
       let price = 0;
+
       this.state.cartProducts.map(item => {
+        console.log(this.state.cartProducts);
         return price = item.Price + price;
+
       })
       return (
         <div>
@@ -115,7 +118,7 @@ class CheckOut extends Component {
               <input type="mail" required onChange={this.getPersonData.bind(this)} ref="mail"/>
             </div>
             <div>
-              <button type="submit">Skicka</button>
+              <button type="submit">Check Out</button>
             </div>
           </form>
         </div>
