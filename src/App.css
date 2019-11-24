@@ -7,10 +7,19 @@ body {
   padding: 0;
   font-family: Helvetica;
   font-weight: 400;
+  text-align: center;
+	position: relative;
+	top:0;
+	bottom: 0;
+	margin: auto;
 }
 
 
 .cart-products {
   display: grid;
 
+}
+
+.start-nav {
+  padding-right: 20px;
 }

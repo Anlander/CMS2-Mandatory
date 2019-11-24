@@ -51,20 +51,20 @@ export default class Blogg extends React.Component {
         <div>
           <Header />
           <div className="navlink-div single-product-nav-div">
-            <NavLink to={"/"}>Start</NavLink>
-            <NavLink to={"/checkout"}>Till Varukorgen</NavLink>
+            <NavLink to={"/"} className="start-nav">Start</NavLink>
+            <NavLink to={"/checkout"} className="nav-menu">Till Varukorgen</NavLink>
           </div>
 
-            <div className="single-product-specific">
-              <div className="single-product-header">
+            <div>
+              <div>
                 <h3>{data.Name}</h3>
                 <textfield>{data.Beskrivning}</textfield>
                 <p ><img src={`${API}`+ data.Image.path} alt="picture" className="picture" /> </p>
               </div>
-              <div className="single-product-info">
+              <div>
                 <p>Antal i lager: {data.Stock} st</p>
               </div>
-              <div className="single-product-button">
+              <div>
                 <p>Pris: {data.Price} :-</p>
                 <AddToCartButton addToCart={addToCart.bind(this, data)}/>
               </div>
