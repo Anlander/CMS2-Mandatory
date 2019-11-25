@@ -21,7 +21,7 @@ class ShowProducts extends Component {
                   <div>
                     <p>{product.Desc}</p>
                     <p>Antal i lager: {product.Stock}</p>
-                    <p>Pris: {product.Price} :-</p>
+                    <p>Pris: {product.Price} SEK :-</p>
                   </div>
                 </div>
                 <div>

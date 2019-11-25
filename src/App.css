@@ -12,8 +12,23 @@ body {
 	top:0;
 	bottom: 0;
 	margin: auto;
+  margin-bottom: 50px;
 }
 
+button {
+  transition: all 1000ms;
+  border-radius: 0px;
+}
+
+button:hover {
+  background: red;
+  color:white;
+}
+
+button:active{
+  color:black;
+  background-color: white;
+}
 
 .cart-products {
   display: grid;
@@ -22,4 +37,28 @@ body {
 
 .start-nav {
   padding-right: 20px;
+}
+
+.checkout-header-div {
+  border: 1px solid black;
+  font-size: 20px;
+}
+.check-out{
+  font-size: 30px;
+  color:red;
+}
+
+.ex-varu {
+  font-size: 40px;
+}
+
+
+.picture{
+  transition: all 1000ms;
+}
+
+
+.picture:hover {
+  width: 250px;
+  height: 220px;
 }

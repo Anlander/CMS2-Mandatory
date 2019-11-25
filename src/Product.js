@@ -65,7 +65,7 @@ export default class Blogg extends React.Component {
                 <p>Antal i lager: {data.Stock} st</p>
               </div>
               <div>
-                <p>Pris: {data.Price} :-</p>
+                <p>Pris: {data.Price} SEK:-</p>
                 <AddToCartButton addToCart={addToCart.bind(this, data)}/>
               </div>
             </div>

@@ -45,7 +45,7 @@ class CheckOut extends Component {
   sendOrder(e) {
     let totalPrice = 0;
     let productsToOrder = this.state.cartProducts.map(product => {
-      totalPrice = totalPrice + product.Price
+      totalPrice = Number(totalPrice + product.Price)
       return {
         ProductName: product.Name,
         ProductPrice: `${product.Price} SEK`,
@@ -74,12 +74,13 @@ class CheckOut extends Component {
       .map(item => {
         return <div key={item.id} className="cart-products">
                   <div className="checkout-header-div">
-                    <p>Product:{item.Name}</p>
+                    <p className="check-out">{item.Name}</p>
                       <p ><img src={`${API}`+ item.Image.path} alt="picture" className="picture" /> </p>
+                      <p> Price: {item.Price} :-</p>
+                      <p> {item.amount}</p>
                   </div>
                   <div className="checkout-product-name-price-amount">
-                    <p> Price: {item.Price} :-</p>
-                    <p> {item.amount}</p>
+
                   </div>
               </div>
       })
@@ -88,8 +89,8 @@ class CheckOut extends Component {
       let price = 0;
 
       this.state.cartProducts.map(item => {
-        console.log(this.state.cartProducts);
-        return price = item.Price + price;
+        console.log(item);
+        return price = Number(item.Price) + price;
 
       })
       return (
@@ -98,7 +99,7 @@ class CheckOut extends Component {
           <div className="checkout-navlink">
             <NavLink to={"/"}>Start</NavLink>
           </div>
-          <h2>Din Varukorg</h2>
+          <h2 className="ex-varu">Din Varukorg</h2>
           <div>
           </div>
           <p>{cart}</p>
