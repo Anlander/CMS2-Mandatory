@@ -54,7 +54,7 @@ export default class Blogg extends React.Component {
             <NavLink to={"/"}>Start</NavLink>
             <NavLink to={"/checkout"}>Till Varukorgen</NavLink>
           </div>
-          <h1> test</h1>
+  
             <div className="single-product-specific">
               <div className="single-product-header">
                 <h3>{product.Name}</h3>
