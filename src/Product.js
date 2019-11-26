@@ -28,7 +28,7 @@ export default class Blogg extends React.Component {
 
   componentDidMount() {
     const id = this.props.match.params.id;
-    axios.get(`${API}api/collections/get/Products?filter[_id]=${id}`)
+    axios.get(`http://localhost:8080/api/collections/get/Products?filter[Stock][$gt]=0`)
       .then(res => {
         const data = res.data;
         console.log(data.entries);

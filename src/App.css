@@ -12,7 +12,7 @@ body {
 	top:0;
 	bottom: 0;
 	margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 button {
@@ -61,4 +61,12 @@ button:active{
 .picture:hover {
   width: 250px;
   height: 220px;
+}
+
+.products-page {
+  display: inline-grid;
+  width: 25%;
+  float: left;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }

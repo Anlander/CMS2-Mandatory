@@ -10,7 +10,7 @@ class ShowProducts extends Component {
         const product = this.props.product;
 
         return (
-              <section>
+              <section className="products-page">
                 <div>
                   <div>
                     <article>
